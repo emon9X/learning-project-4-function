@@ -58,3 +58,24 @@
     execute1()
 }
 // -------------------------------------------------------
+{
+    // javascript function's object characteristics 
+
+    function greet() {
+        console.log("Hello!");
+    }
+
+    greet.sayHi = function () { /*sayHi is like a property of an object */
+        console.log("Hi!");
+    };
+    let sayHi = greet.sayHi
+    sayHi()
+    greet.sayHi()  /**sayHi == greet.sayHi */
+
+    greet.number = 10; /*number is like a property of an object */
+    let num = greet.number;
+    console.log(num);
+
+    // greet() calls/invokes a function. but greet (greet.sayHi) is an object 
+
+}
